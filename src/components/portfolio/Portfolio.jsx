@@ -17,63 +17,72 @@ const data = [
   image: Img1,
   title: 'Khamsat Clone',
   github: 'https://github.com/Ahmed-ramadan21/khamsat-clone',
-  demo: 'https://khamsat-clone-two.vercel.app/'
+  demo: 'https://khamsat-clone-two.vercel.app/',
+  responsive: 'Not responsive'
 },
 {
   id: 2,
   image: Img8,
   title: 'Facebook Clone',
   github: 'https://github.com/Ahmed-ramadan21/facebook-clone-1',
-  demo: 'https://facebook-clone-1-rkpe.vercel.app/'
+  demo: 'https://facebook-clone-1-rkpe.vercel.app/',
+  responsive: 'Responsive'
 },
 {
   id: 3,
   image: Img2,
   title: 'E-Commerce Store',
   github: 'https://github.com/Ahmed-ramadan21/project-store',
-  demo: 'https://project-store-liard.vercel.app/'
+  demo: 'https://project-store-liard.vercel.app/',
+  responsive: 'Responsive'
 },
 {
   id: 4,
   image: Img4,
   title: 'E-Commerce Kayan',
   github: 'https://github.com/Ahmed-ramadan21/e-commerce-kayan',
-  demo: 'https://e-commerce-kayan.vercel.app/'
+  demo: 'https://e-commerce-kayan.vercel.app/',
+  responsive: 'Responsive'
 },
 {
   id: 5,
   image: Img3,
   title: 'Landing Page',
   github: 'https://github.com/Ahmed-ramadan21/project1',
-  demo: 'https://project1-dun.vercel.app/'
+  demo: 'https://project1-dun.vercel.app/',
+  responsive: 'Not responsive'
 },
 {
   id: 6,
   image: Img6,
   title: 'Landing Page',
   github: 'https://github.com/Ahmed-ramadan21/Dr-Mohamed-ElHelw',
-  demo: 'https://dr-mohamed-el-helw.vercel.app/'
+  demo: 'https://dr-mohamed-el-helw.vercel.app/',
+  responsive: 'Responsive'
 },
 {
   id: 7,
   image: Img5,
   title: 'Stop watch & watch',
   github: 'https://github.com/Ahmed-ramadan21/stop-watch',
-  demo: 'https://stop-watch-mocha.vercel.app/'
+  demo: 'https://stop-watch-mocha.vercel.app/',
+  responsive: 'Responsive'
 },
 {
   id: 8,
   image: Img7,
   title: 'To-Do-List',
   github: 'https://github.com/Ahmed-ramadan21/To-Do-List',
-  demo: 'https://to-do-list-flax-seven.vercel.app/'
+  demo: 'https://to-do-list-flax-seven.vercel.app/',
+  responsive: 'Responsive'
 },
 {
   id: 9,
   image: Img9,
   title: 'Calculator',
   github: 'https://github.com/Ahmed-ramadan21/calculator',
-  demo: 'https://calculator-mocha-eight.vercel.app/'
+  demo: 'https://calculator-mocha-eight.vercel.app/',
+  responsive: 'Responsive'
 },
 ]
 
@@ -86,13 +95,14 @@ const data = [
 
       <div className="container portfolio__container">
         {
-          data.map(({id, image, title, github, demo}) => {
+          data.map(({id, image, title, github, demo ,responsive}) => {
             return(
               <article key={id} className="portfolio__item">
                 <div className="portfolio__item-image">
                   <img src={image} alt={title} />
                 </div>
                 <h3>{title}</h3>
+                <h6>{responsive}</h6>
                 <div className="portfolio__item-buttons">
                   <a href={github} className='btn' target='_blank'>Github</a>
                   <a href={demo} className='btn btn-primary' target='_blank'>Live Demo</a>
